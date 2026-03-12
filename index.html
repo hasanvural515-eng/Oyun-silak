@@ -6,6 +6,15 @@
 <title>Kutu Dünyası - KARAKTER GÖRÜNÜYOR</title>
 <!-- PeerJS -->
 <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
+ <script>
+
+window.onload = () => {
+    if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock("landscape").catch(()=>{});
+    }
+};
+
+ </script>
 <style>
 body{
 margin:0;
